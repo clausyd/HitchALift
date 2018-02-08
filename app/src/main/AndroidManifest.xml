@@ -22,21 +22,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Registration_Form_Activity"
-            android:label="@string/title_activity_registration__form_"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
             android:name=".Home_User_Screen_Activity"
             android:label="@string/title_activity_home__user__screen_"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Login_Choice_Activity"></activity>
+        <activity android:name=".Login_Choice_Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Registration_Activity"></activity>
     </application>
 
 </manifest>

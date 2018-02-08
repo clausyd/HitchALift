@@ -20,7 +20,7 @@ public class Customer {
         this.emial = email;
         this.password = password;
 
-        customer.add(this);
+
 
 
     }

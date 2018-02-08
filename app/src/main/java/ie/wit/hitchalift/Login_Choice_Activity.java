@@ -20,7 +20,7 @@ public class Login_Choice_Activity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Registration_Form_Activity.class);
+                Intent myIntent = new Intent(view.getContext(), Registration_Activity.class);
                 startActivityForResult(myIntent, 0);
 
             }
