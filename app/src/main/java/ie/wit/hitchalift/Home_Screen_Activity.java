@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class Home_Screen_Activity extends AppCompatActivity implements DatePicke
     int finalDay, finalMonth, finalYear;
     TextView date;
     ImageButton loginSignUp;
+    Button search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,16 @@ public class Home_Screen_Activity extends AppCompatActivity implements DatePicke
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,Country_Names);
         autoCompleteTextView1.setAdapter(adapter);
         autoCompleteTextView2.setAdapter(adapter);
+
+        search = findViewById(R.id.search);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Journey_List_Activity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
 
         loginSignUp = findViewById(R.id.loginSignUp);
 

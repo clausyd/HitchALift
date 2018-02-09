@@ -1,6 +1,16 @@
 package ie.wit.hitchalift;
 
+import android.content.Context;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
 import java.util.*;
+
+import static android.content.Context.*;
 
 /**
  * Created by clausyd on 08/02/18.
@@ -39,5 +49,29 @@ public class CustomerManager {
             return a.emial.compareTo(b.emial);
         }
     };
+
+//    public void writeArrayToFile(){
+//        ObjectOutputStream outputStream;
+//        //Context context = null;
+//        //File directory = null;
+//        String directory ="directory";
+//
+////        File directory = new File(Context.getFilesDir().getAbsolutePath() );
+////        if(!directory.exists()){
+////            directory.mkdir();
+//        }
+////
+////        ObjectOutput out = null;
+//        try {
+//            //out = new ObjectOutputStream(new FileOutputStream(directory + File.separator + fileName));
+//            outputStream = outputStream(directory, Context.MODE_PRIVATE);
+//        outputStream.writeObject(customerList);
+//            out.close();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 }

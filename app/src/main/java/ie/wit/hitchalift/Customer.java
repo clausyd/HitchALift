@@ -19,9 +19,21 @@ public class Customer {
         this.surname = surname;
         this.emial = email;
         this.password = password;
+    }
 
+    public String getFname(){
+        return fname;
+    }
 
+    public String getLname(){
+        return surname;
+    }
 
+    public String getEmail(){
+        return emial;
+    }
 
+    public String getPassword(){
+        return password;
     }
 }
